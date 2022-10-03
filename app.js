@@ -57,4 +57,4 @@ function countdown() {
 setInterval(() => {
   countdown();
   displayCountdown();
-}, 1);
+}, 1000);
