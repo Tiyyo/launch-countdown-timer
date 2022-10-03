@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Launch countdown timer</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap"
+      rel="stylesheet"
+      <!--
+      Feel
+      free
+      to
+      remove
+      these
+      styles
+      or
+      customise
+      in
+      your
+      own
+      stylesheet
+      👍
+      --
+    />
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>We're launching soon</h1>
+      <div class="container">
+        <div class="container__days days">
+          <div class="calendar">
+            <div class="high"></div>
+            <div class="down"></div>
+            <div class="countdown">
+              <span class="displayed-day" id="days"></span>
+            </div>
+          </div>
+          <h2 class="days__title">Days</h2>
+        </div>
+
+        <div class="container__hours hours">
+          <div class="calendar">
+            <div class="high"></div>
+            <div class="down"></div>
+            <div class="countdown">
+              <span class="displayed-hours" id="hours"></span>
+            </div>
+          </div>
+          <h2 class="hours__title">Hours</h2>
+        </div>
+
+        <div class="container__minutes minutes">
+          <div class="calendar">
+            <div class="high"></div>
+            <div class="down"></div>
+            <div class="countdown">
+              <span class="displayed-minutes" id="minutes"></span>
+            </div>
+          </div>
+          <h2 class="minutes__title">Minutes</h2>
+        </div>
+
+        <div class="container__seconds seconds">
+          <div class="calendar">
+            <div class="high"></div>
+            <div class="down"></div>
+            <div class="countdown">
+              <span class="displayed-seconds" id="seconds"></span>
+            </div>
+          </div>
+          <h2 class="seconds__title">Seconds</h2>
+        </div>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
