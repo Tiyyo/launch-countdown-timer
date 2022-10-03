@@ -57,8 +57,4 @@ function countdown() {
 setInterval(() => {
   countdown();
   displayCountdown();
-}, 1000);
-
-window.addEventListener("click", (e) => {
-  console.log(e.target);
-});
+}, 1);
