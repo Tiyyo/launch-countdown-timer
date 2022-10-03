@@ -16,11 +16,6 @@ let hours = Math.floor((interval / secIn1Hour) % 24);
 let minutes = Math.floor((interval / secIn1Min) % 60);
 let seconds = interval % 60;
 
-let trialSeconds = 41;
-let trialMinutes = 50;
-let trialHours = 23;
-let trialDays = 08;
-
 function displayCountdown() {
   seconds < 10
     ? (secondsDisplayed.textContent = "0" + seconds)
@@ -57,5 +52,3 @@ setInterval(() => {
   countdown();
   displayCountdown();
 }, 1000);
-
-countdown();
