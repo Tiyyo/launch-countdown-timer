@@ -173,7 +173,6 @@ span {
 .calendar .down {
   height: 50%;
   background-color: hsl(236deg, 21%, 26%);
-  mix-blend-mode: lighten;
 }
 
 ul {
