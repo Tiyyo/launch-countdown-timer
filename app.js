@@ -16,6 +16,8 @@ let hours = Math.floor((interval / secIn1Hour) % 24);
 let minutes = Math.floor((interval / secIn1Min) % 60);
 let seconds = interval % 60;
 
+console.log(seconds);
+
 function displayCountdown() {
   seconds < 10
     ? (secondsDisplayed.textContent = "0" + seconds)
@@ -34,12 +36,16 @@ function displayCountdown() {
 function countdown() {
   if (days === 0 && hours === 0 && minutes === 0 && seconds === 0) {
     clearInterval(interval);
+  } else if (days === 0) {
+    hours = 23;
+    minutes = 59;
+    seconds = 60;
   } else if (hours === 0) {
     days--;
-    hours = 24;
+    hours = 23;
   } else if (minutes === 0) {
     hours--;
-    minutes = 60;
+    minutes = 59;
   } else if (seconds === 0) {
     minutes--;
     seconds = 60;
@@ -52,3 +58,7 @@ setInterval(() => {
   countdown();
   displayCountdown();
 }, 1000);
+
+window.addEventListener("click", (e) => {
+  console.log(e.target);
+});
